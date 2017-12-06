@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/seeallclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/reportcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@color/black300">
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+
+                              />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ggm.yangonhotel.api.Zawgyitextview
+                            android:singleLine="true"
+                            android:id="@+id/hname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Hotel Name"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+
+                        <RatingBar
+                            android:id="@+id/hotelrate"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="4.3"
+                             />
+
+                        <View
+
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimaryreduce" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/ratingboder">
+
+                                <ggm.yangonhotel.api.Zawgyitextview
+                                    android:id="@+id/hrating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:maxLines="1"
+                                    android:padding="3dp"
+                                    android:text="4.3"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="vertical">
+
+
+                                <ggm.yangonhotel.api.Zawgyitextview
+                                    android:singleLine="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:maxLines="1"
+                                    android:text="Customer Rating"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <ggm.yangonhotel.api.Zawgyitextview
+                                    android:singleLine="true"
+                                    android:id="@+id/hview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:maxLines="1"
+                                    android:padding="3dp"
+                                    android:text="10k Views"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/white">
+
+
+                            <ggm.yangonhotel.api.Zawgyitextview
+                                android:id="@+id/haddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="5/2/209 ,Myayatanar str , Shwepyithar , Yangon"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/retanglename">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+
+                                <ggm.yangonhotel.api.Zawgyitextview
+                                    android:id="@+id/hprice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="3dp"
+                                    android:maxLines="1"
+                                    android:text="10,000"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                                <ggm.yangonhotel.api.Zawgyitextview
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:maxLines="1"
+                                    android:text="KYATS PER DAY"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
